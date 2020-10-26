@@ -4,7 +4,7 @@ kind: CronJob
 metadata:
   name: scanner
 spec:
-  schedule: {{ index .Values "klustair-runner" "schedule" }}
+  schedule: "{{ index .Values "klustair-runner" "schedule" }}"
   jobTemplate:
     spec:
       template:
